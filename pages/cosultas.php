@@ -5,8 +5,9 @@
     <title>Shicso</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-    <script type="text/javascript" src="layout/scripts/sidebar.js"></script>
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="../layout/scripts/sidebar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body id="top">
@@ -15,15 +16,15 @@
     <!-- ################################################################################################ -->
     <div class="wrapper row0">
         <header id="header" class="hoc clear">
-            <img src="imagenes/gdoIcon.png">
-            <h1 class="logoname clear"><a href="main.php">BACAL</a></h1>
+            <img src="../imagenes/gdoIcon.png">
+            <h1 class="logoname clear"><a href="../main.php">BACAL</a></h1>
             <p>Grano de Oro</p>
             <li><a href="../index.php">Log out</a></li>
             <!-- ################################################################################################ -->
         </header>
     </div>
 
-    <div class="wrapper row3" style="background-image:url('imagenes/fondo2.jpg');">
+    <div class="wrapper row3" style="background-image:url('../imagenes/fondo2.jpg');">
 
 
         <main class="hoc container clear">
@@ -35,7 +36,7 @@
                 <h6>Navegacion</h6>
                 <nav class="sdb_holder">
                     <ul>
-                        <li><a href="#">Informacion de la Empresa</a></li>
+                        <li><a href="InfoEmpresa.html">Informacion de la Empresa</a></li>
 
                         <br>
                         <li><a href="#">Consulta</a></li>
@@ -44,21 +45,36 @@
                 </nav>
                 <!-- ################################################################################################ -->
             </div>
-
-
             <div id="main">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
             </div>
 
             <!-- ################################################################################################ -->
             <!-- ################################################################################################ -->
+            
             <div class="content three_quarter">
                 <div class="wrapper bgded overlay">
-                    <div id="pageintro" class="hoc clear">
-                        <!-- ################################################################################################ -->
-                        <article>
 
-                        </article>
+
+                    <form action="mostrarConsulta.php" method="posts">
+                        Selecciona una consulta: 
+                        <select  name="consulta" style="background-color: blue" > 
+                            <option style="background-color: blue" value="valor1">Provedores</option></a>
+                            <option style="background-color: blue" value="valor2">Productos</option>
+                            <option style="background-color: blue" value="valor3">Inventarios</option>
+                            <option style="background-color: blue" value="valor4">Compras</option>
+                            <option style="background-color: blue" value="valor5">Detalle de Compras</option>
+                        </select>
+                        <input type="submit" name="submit" value="Buscar" style="background-color: blue">
+                    </form>
+
+                    <div id="pageintro" class="hoc clear">
+                        
+                        <table width="100%" id="cosa" action="mostrarConsulta.php">
+                                
+
+
+                        </table>
                         <!-- ################################################################################################ -->
                     </div>
                 </div>
@@ -111,10 +127,10 @@
     <!-- ################################################################################################ -->
     <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
     <!-- JAVASCRIPTS -->
-    <script src="layout/scripts/jquery.min.js"></script>
-    <script src="layout/scripts/jquery.backtotop.js"></script>
-    <script src="layout/scripts/jquery.mobilemenu.js"></script>
-
+    </script>
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/jquery.mobilemenu.js"></script>
 </body>
 
 </html>

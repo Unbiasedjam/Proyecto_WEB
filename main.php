@@ -35,10 +35,10 @@
                     <h6>Navegacion</h6>
                     <nav class="sdb_holder">
                         <ul>
-                            <li><a href="#">Informacion de la Empresa</a></li>
+                            <li><a href="pages/InfoEmpresa.html">Informacion de la Empresa</a></li>
                             
                             <br>
-                            <li><a href="#">Consulta</a></li>
+                            <li><a href="pages/cosultas.php">Consulta</a></li>
                             
                         </ul>
                     </nav>
